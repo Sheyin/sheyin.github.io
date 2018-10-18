@@ -1,0 +1,31 @@
+body {
+	background-color: #323232;
+	font-size: 15px;
+}
+
+img {
+	width: 100%;
+}
+
+#screen {
+	width: 100%;
+	border-radius: 10px;
+	border: 2px solid;
+	border-color: black;
+	padding: 5px 55px 0px 55px;
+	margin: 0px;
+	background-image: url('image/blank_document.jpg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 170px;
+	background-color: #DFDFDF;
+}
+
+.space {
+	width: 1px;
+}
+
+.row {
+	width: 100%;
+}
