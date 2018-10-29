@@ -1,0 +1,132 @@
+$lightCyan: #468D9A;
+$mediumCyan: #176776;
+$darkCyan: #0E7373;
+$Cyan: #1D9999;
+$purple: #713393;
+$charcoalGrey: #323232;
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: $charcoalGrey;
+	font-size: 15px;
+	font-family: 'Montaga', serif;
+	height: 100%;
+}
+
+a:link {
+	color: $mediumCyan;
+}
+
+a:visited {
+	color: $darkCyan;
+}
+
+a:active {
+	color: $lightCyan;
+}
+
+a:hover {
+	color: $purple;
+}
+
+a:visited {
+	color: $Cyan;
+}
+
+p:last-child {
+	margin-bottom: 0px;
+}
+
+img {
+	width: 100%;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-style: italic;
+}
+
+#main-window {
+	background-color: #79797B;
+	background-image: url('image/keyboard_full.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 100%;
+}
+
+#main-text {
+	padding-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#project-text {
+	padding-top: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	div {
+		overflow: hidden;
+		margin-bottom: 1%;
+		border: 3px double $charcoalGrey;
+		border-radius: 7px;
+		opacity: 1;
+		background-color: rgba(200, 200, 200, 0.9)
+	}
+	div:last-child {
+		margin-bottom: 0px;
+	}
+	div > span {
+		font-size: 1.3em;
+		font-weight: bold;
+		display: block;
+	}
+
+	div > img {
+		float: left;
+		text-align: left;
+		margin-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		margin-right: 15px;
+		width: 200px;
+	}
+	.project-tags {
+		font-size: 1em;
+		color: $darkCyan;
+	}
+}
+
+#welcometext {
+	background-color: white;
+}
+
+#navigation {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	font-size: 1.5em;
+	div {
+		min-width: 10%;
+		text-align: center;
+		border: 3px double $charcoalGrey;
+		border-radius: 7px;
+		background-color: rgba(200, 200, 200, 0.9)
+	}
+}
+
+.space {
+	width: 1px;
+}
+
+.row {
+	width: 100%;
+}

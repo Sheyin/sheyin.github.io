@@ -1,35 +1,126 @@
+html {
+  height: 100%;
+}
+
 body {
-	background-color: #323232;
-	font-size: 15px;
+  background-color: #323232;
+  font-size: 15px;
+  font-family: "Montaga", serif;
+  height: 100%;
+}
+
+a:link {
+  color: #176776;
+}
+
+a:visited {
+  color: #0E7373;
+}
+
+a:active {
+  color: #468D9A;
+}
+
+a:hover {
+  color: #713393;
+}
+
+a:visited {
+  color: #1D9999;
+}
+
+p:last-child {
+  margin-bottom: 0px;
 }
 
 img {
-	width: 100%;
+  width: 100%;
 }
 
-#screen {
-	width: 100%;
-	border-radius: 10px;
-	border: 2px solid;
-	border-color: black;
-	padding: 5px 55px 0px 55px;
-	margin: 0px;
-	background-image: url('image/blank_document.jpg');
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	height: 170px;
-	background-color: #DFDFDF;
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+#main-window {
+  background-color: #79797B;
+  background-image: url("image/keyboard_full.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+}
+
+#main-text {
+  padding-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#project-text {
+  padding-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#project-text div {
+  overflow: hidden;
+  margin-bottom: 1%;
+  border: 3px double #323232;
+  border-radius: 7px;
+  opacity: 1;
+  background-color: rgba(200, 200, 200, 0.9);
+}
+#project-text div:last-child {
+  margin-bottom: 0px;
+}
+#project-text div > span {
+  font-size: 1.3em;
+  font-weight: bold;
+  display: block;
+}
+#project-text div > img {
+  float: left;
+  text-align: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 15px;
+  width: 200px;
+}
+#project-text .project-tags {
+  font-size: 1em;
+  color: #0E7373;
 }
 
 #welcometext {
-	background-color: red;
+  background-color: white;
+}
+
+#navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.5em;
+}
+#navigation div {
+  min-width: 10%;
+  text-align: center;
+  border: 3px double #323232;
+  border-radius: 7px;
+  background-color: rgba(200, 200, 200, 0.9);
 }
 
 .space {
-	width: 1px;
+  width: 1px;
 }
 
 .row {
-	width: 100%;
+  width: 100%;
 }
+
+/*# sourceMappingURL=style.css.map */
