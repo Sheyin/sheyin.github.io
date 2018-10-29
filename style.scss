@@ -7,13 +7,18 @@ $charcoalGrey: #323232;
 $lightTeal: #8EAEB7;
 $mediumTeal: #335B67;
 $darkerTeal: #0E2D36;
+$off-white: #CFCFCF;
+$pattern-green: #4F8C7E;
 
 html {
 	height: 100%;
 }
 
 body {
-	background-color: $mediumTeal;
+	background-image: url('image/bryan-colosky-317764-unsplash.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	font-size: 15px;
 	font-family: 'Montaga', serif;
 	height: 100%;
@@ -63,11 +68,8 @@ h3 {
 }
 
 #main-window {
-	background-image: url('image/bryan-colosky-317764-unsplash.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 	min-height: 100%;
+		background-color: $off-white;
 }
 
 #main-text {

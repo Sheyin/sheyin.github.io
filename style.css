@@ -3,7 +3,10 @@ html {
 }
 
 body {
-  background-color: #335B67;
+  background-image: url("image/bryan-colosky-317764-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-size: 15px;
   font-family: "Montaga", serif;
   height: 100%;
@@ -53,11 +56,8 @@ h3 {
 }
 
 #main-window {
-  background-image: url("image/bryan-colosky-317764-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   min-height: 100%;
+  background-color: #CFCFCF;
 }
 
 #main-text {
