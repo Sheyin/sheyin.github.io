@@ -4,9 +4,9 @@ $darkCyan: #0E7373;
 $Cyan: #1D9999;
 $purple: #9668B0;
 $charcoalGrey: #323232;
-$lightTeal: #8EAEB7;
-$mediumTeal: #335B67;
-$darkerTeal: #0E2D36;
+$lightTeal: #66DBC4;
+$mediumTeal: #2CC0A3;
+$darkerTeal: #005544;
 $off-white: #CFCFCF;
 $pattern-light-green: #64AF97;
 $pattern-darker-green: #246D55;
@@ -33,11 +33,11 @@ a {
 }
 
 a:link {
-	color: $pattern-darker-green;
+	color: $darkerTeal;
 }
 
 a:visited {
-	color: $pattern-darker-green;
+	color: $darkerTeal;
 }
 
 a:active {
@@ -102,12 +102,15 @@ h3 {
 	}
 }
 
-.about-me-point {
-	padding: 5px;
+.colored-text-content-box {
 	border: 3px $border;
 	border-radius: 7px;
-	background-color: rgba(100, 175, 150, 0.9);
 	margin-bottom: 5%;
+	padding: 5px;
+	background-color: $mediumTeal;
+}
+
+.about-me-point {
 }
 
 #projects {
@@ -132,7 +135,8 @@ h3 {
 		border: 3px $border;
 		border-radius: 7px;
 		opacity: 1;
-		background-color: rgba(100, 175, 150, 0.9);
+		background-color: $mediumTeal;
+		padding: 0 0 0 0;
 
 		@media (max-width: 769px) {
 			img {
@@ -179,7 +183,7 @@ h3 {
 
 		.project-tags {
 			font-size: 1em;
-			color: $pattern-darker-green;
+			color: $purple;
 		}
 	}
 }
@@ -216,7 +220,7 @@ h3 {
 		text-align: center;
 		border: 3px $border;
 		border-radius: 7px;
-		background-color: rgba(100, 175, 150, 0.9)
+		background-color: $mediumTeal;
 	}
 }
 

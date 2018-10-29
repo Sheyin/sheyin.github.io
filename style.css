@@ -18,15 +18,15 @@ a {
 }
 
 a:link {
-  color: #246D55;
+  color: #005544;
 }
 
 a:visited {
-  color: #246D55;
+  color: #005544;
 }
 
 a:active {
-  color: #8EAEB7;
+  color: #66DBC4;
 }
 
 a:hover {
@@ -89,12 +89,12 @@ h3 {
   }
 }
 
-.about-me-point {
-  padding: 5px;
+.colored-text-content-box {
   border: 3px solid #323232;
   border-radius: 7px;
-  background-color: rgba(100, 175, 150, 0.9);
   margin-bottom: 5%;
+  padding: 5px;
+  background-color: #2CC0A3;
 }
 
 #projects {
@@ -117,7 +117,8 @@ h3 {
   border: 3px solid #323232;
   border-radius: 7px;
   opacity: 1;
-  background-color: rgba(100, 175, 150, 0.9);
+  background-color: #2CC0A3;
+  padding: 0 0 0 0;
 }
 @media (max-width: 769px) {
   #project-box .project img {
@@ -159,7 +160,7 @@ h3 {
 }
 #project-box .project .project-tags {
   font-size: 1em;
-  color: #246D55;
+  color: #9668B0;
 }
 
 .demolink {
@@ -195,7 +196,7 @@ h3 {
   text-align: center;
   border: 3px solid #323232;
   border-radius: 7px;
-  background-color: rgba(100, 175, 150, 0.9);
+  background-color: #2CC0A3;
 }
 
 .space {
