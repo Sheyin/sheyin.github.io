@@ -46,7 +46,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Amaranth", sans-serif;
+  font-family: "Acme", sans-serif;
   font-size: 1.5em;
 }
 
@@ -94,6 +94,7 @@ h3 {
   border: 3px solid #323232;
   border-radius: 7px;
   background-color: rgba(100, 175, 150, 0.9);
+  margin-bottom: 5%;
 }
 
 #projects {
@@ -101,45 +102,62 @@ h3 {
   margin-left: 5%;
   margin-right: 5%;
 }
-#projects div {
+
+#project-box {
+  display: flex;
+  flex-direction: column;
+}
+#project-box div {
   overflow: hidden;
-  margin-bottom: 1%;
+}
+#project-box div:last-child {
+  margin-bottom: 0px;
+}
+#project-box .project {
   border: 3px solid #323232;
   border-radius: 7px;
   opacity: 1;
   background-color: rgba(100, 175, 150, 0.9);
 }
-#projects div:last-child {
-  margin-bottom: 0px;
-}
-#projects div > span {
-  display: block;
-}
-#projects div > img {
-  float: left;
-  text-align: left;
-  width: 220px;
-  height: 220px;
-}
-@media (max-width: 399px) {
-  #projects div > img {
-    border-bottom: 3px solid #323232;
-    margin-left: 0px;
-    margin-top: 0px;
+@media (max-width: 769px) {
+  #project-box .project img {
+    width: 100%;
+    display: block;
+  }
+  #project-box .project .project-description {
+    margin-top: 15px;
     margin-right: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
   }
 }
-@media (min-width: 400px) {
-  #projects div > img {
-    border-right: 3px solid #323232;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+@media (min-width: 770px) {
+  #project-box .project img {
+    width: 300px;
+    height: 300px;
+    float: left;
+    text-align: left;
     margin-right: 15px;
   }
+  #project-box .project .project-description {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+  }
 }
-#projects .project-tags {
+#project-box .project div > span {
+  display: block;
+}
+#project-box .project .project-tags {
   font-size: 1em;
   color: #246D55;
 }
@@ -169,7 +187,8 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 1.5em;
+  font-size: 1.6em;
+  font-family: "Acme", sans-serif;
 }
 #navigation div {
   min-width: 15%;

@@ -3,6 +3,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cormorant+Upright|Fredericka+the+Great|Laila|Montaga" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<title>Main page</title>
 </head>
@@ -61,44 +62,57 @@
 			<a name="projects"></a>
 			<h1>Projects</h1>
 
-			<div class="project shadow mb-5">
-				<img src="image/bookreviewsite.jpg">
-				<span class="project-header">Book Review Site</span>
-				<span class="demolink">[<a href="http://projectheron.herokuapp.com/">demo</a>]</span>
-				A mobile-responsive mock book review site that allows users to search for books.  Flask is used to serve pages and connect to a PostgreSQL database hosted on Heroku.  The site also performs authentication, allows users to rate and review books, and utilizes Goodreads’s api to retrieve ratings.  The site also provides api access via JSON.
-				<span class="project-tags">Python, Javascript, SQL</span>
-			</div>
+			<div id="project-box">
 
-			<div class="project shadow mb-5">
-				<img src="image/unscrambler.jpg">
-				<span class="project-header">Word Unscrambler</span>
-				<span class="demolink">[<a href="http://sheyin.pythonanywhere.com/">demo</a>] [<a href="https://github.com/Sheyin/word-unscrambler">source</a>]</span>
-				Generates a list of possible words / permutations in order to solve word puzzles.  The backend is in Python serving pages with Flask, while the front end uses Javascript for input validation and display.
-				<span class="project-tags">Python, Javascript</span>
-			</div>
+				<div class="project shadow mb-5">
+					<img src="image/bookreviewsite.jpg">
+					<div class="project-description">
+						<span class="project-header">Book Review Site</span>
+						<span class="demolink">[<a href="http://projectheron.herokuapp.com/">demo</a>]</span>
+						A mobile-responsive mock book review site that allows users to search for books.  Flask is used to serve pages and connect to a PostgreSQL database hosted on Heroku.  The site also performs authentication, allows users to rate and review books, and utilizes Goodreads’s api to retrieve ratings.  The site also provides api access via JSON.
+						<span class="project-tags">Python, Javascript, SQL</span>
+					</div>
+				</div>
 
-			<div class="project shadow mb-5">
-				<img src="image/flack.jpg">
-				<span class="project-header">Flack</span>
-				<span class="demolink">[<a href="https://damp-depths-57355.herokuapp.com">demo</a>]</span>
-				Chat site in the style of Slack, utilizing Flask and sockets.io to provide realtime chat communication between multiple users.  It save chat history and allows users to create new chat channels.
-				<span class="project-tags">Python, Javascript</span>
-			</div>
+				<div class="project shadow mb-5">
+					<img src="image/unscrambler.jpg">
+					<div class="project-description">
+						<span class="project-header">Word Unscrambler</span>
+						<span class="demolink">[<a href="http://sheyin.pythonanywhere.com/">demo</a>] [<a href="https://github.com/Sheyin/word-unscrambler">source</a>]</span>
+						Generates a list of possible words / permutations in order to solve word puzzles.  The backend is in Python serving pages with Flask, while the front end uses Javascript for input validation and display.
+						<span class="project-tags">Python, Javascript</span>
+					</div>
+				</div>
 
-			<div class="project shadow mb-5">
-				<img src="image/deadinthewater.jpg">
-				<span class="project-header">Dead in the Water</span>
-				<span class="demolink">[<a href="https://github.com/Sheyin/CS467-Serpens-Adventure/tree/master">source</a>]</span>
-				A console-based work of interactive fiction.  Group project written in Python 2.7.5, later converted to be compatible with Python 3.6.  My contribution included input parsing, ui and level design.
-				<span class="project-tags">Python</span>
-			</div>
+				<div class="project shadow mb-5">
+					<img src="image/flack.jpg">
+					<div class="project-description">
+						<span class="project-header">Flack</span>
+						<span class="demolink">[<a href="https://damp-depths-57355.herokuapp.com">demo</a>]</span>
+						Chat site in the style of Slack, utilizing Flask and sockets.io to provide realtime chat communication between multiple users.  It save chat history and allows users to create new chat channels.
+						<span class="project-tags">Python, Javascript</span>
+					</div>
+				</div>
 
-			<div class="project shadow mb-5">
-				<img src="image/discordlogo.jpg">
-				<span class="project-header">Lurky</span>
-				<span class="demolink">[<a href="https://github.com/Sheyin/Lurky">source</a>]</span>
-				A Discord chatbot that performs miscellaneous tasks, including greeting people, recording and retrieving quotes, and performing automatic currency conversions.  Utilizes the discord.py library.
-				<span class="project-tags">Python</span>
+				<div class="project shadow mb-5">
+					<img src="image/deadinthewater.jpg">
+					<div class="project-description">
+						<span class="project-header">Dead in the Water</span>
+						<span class="demolink">[<a href="https://github.com/Sheyin/CS467-Serpens-Adventure/tree/master">source</a>]</span>
+						A console-based work of interactive fiction.  Group project written in Python 2.7.5, later converted to be compatible with Python 3.6.  My contribution included input parsing, ui and level design.
+						<span class="project-tags">Python</span>
+					</div>
+				</div>
+
+				<div class="project shadow mb-5">
+					<img src="image/discordlogo.jpg">
+					<div class="project-description">
+						<span class="project-header">Lurky</span>
+						<span class="demolink">[<a href="https://github.com/Sheyin/Lurky">source</a>]</span>
+						A Discord chatbot that performs miscellaneous tasks, including greeting people, recording and retrieving quotes, and performing automatic currency conversions.  Utilizes the discord.py library.
+						<span class="project-tags">Python</span>
+					</div>
+				</div>
 			</div>
 		</div> <!-- Project-text -->
 
