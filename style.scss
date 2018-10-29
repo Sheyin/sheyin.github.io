@@ -4,37 +4,39 @@ $darkCyan: #0E7373;
 $Cyan: #1D9999;
 $purple: #713393;
 $charcoalGrey: #323232;
-$darkerTeal: #335B67;
+$lightTeal: #8EAEB7;
+$mediumTeal: #335B67;
+$darkerTeal: #0E2D36;
 
 html {
 	height: 100%;
 }
 
 body {
-	background-color: $darkerTeal;
+	background-color: $mediumTeal;
 	font-size: 15px;
 	font-family: 'Montaga', serif;
 	height: 100%;
 }
 
+a {
+	font-weight: bold;
+}
+
 a:link {
-	color: $mediumCyan;
+	color: $mediumTeal;
 }
 
 a:visited {
-	color: $darkCyan;
+	color: $darkerTeal;
 }
 
 a:active {
-	color: $lightCyan;
+	color: $lightTeal;
 }
 
 a:hover {
 	color: $purple;
-}
-
-a:visited {
-	color: $Cyan;
 }
 
 p:last-child {
@@ -61,8 +63,7 @@ h3 {
 }
 
 #main-window {
-	background-color: #79797B;
-	background-image: url('image/keyboard_full.jpg');
+	background-image: url('image/bryan-colosky-317764-unsplash.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;

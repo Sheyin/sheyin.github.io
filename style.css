@@ -3,30 +3,30 @@ html {
 }
 
 body {
-  background-color: #323232;
+  background-color: #335B67;
   font-size: 15px;
   font-family: "Montaga", serif;
   height: 100%;
 }
 
+a {
+  font-weight: bold;
+}
+
 a:link {
-  color: #176776;
+  color: #335B67;
 }
 
 a:visited {
-  color: #0E7373;
+  color: #0E2D36;
 }
 
 a:active {
-  color: #468D9A;
+  color: #8EAEB7;
 }
 
 a:hover {
   color: #713393;
-}
-
-a:visited {
-  color: #1D9999;
 }
 
 p:last-child {
@@ -53,8 +53,7 @@ h3 {
 }
 
 #main-window {
-  background-color: #79797B;
-  background-image: url("image/keyboard_full.jpg");
+  background-image: url("image/bryan-colosky-317764-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
