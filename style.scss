@@ -2,13 +2,14 @@ $lightCyan: #468D9A;
 $mediumCyan: #176776;
 $darkCyan: #0E7373;
 $Cyan: #1D9999;
-$purple: #713393;
+$purple: #9668B0;
 $charcoalGrey: #323232;
 $lightTeal: #8EAEB7;
 $mediumTeal: #335B67;
 $darkerTeal: #0E2D36;
 $off-white: #CFCFCF;
-$pattern-green: #4F8C7E;
+$pattern-light-green: #64AF97;
+$pattern-darker-green: #246D55;
 
 html {
 	height: 100%;
@@ -19,6 +20,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-color: $off-white;
 	font-size: 15px;
 	font-family: 'Montaga', serif;
 	height: 100%;
@@ -29,11 +31,11 @@ a {
 }
 
 a:link {
-	color: $mediumTeal;
+	color: $pattern-darker-green;
 }
 
 a:visited {
-	color: $darkerTeal;
+	color: $pattern-darker-green;
 }
 
 a:active {
@@ -88,7 +90,7 @@ h3 {
 		border: 3px double $charcoalGrey;
 		border-radius: 7px;
 		opacity: 1;
-		background-color: rgba(200, 200, 200, 0.9)
+		background-color: rgba(100, 175, 150, 0.9)
 	}
 	div:last-child {
 		margin-bottom: 0px;
@@ -109,7 +111,7 @@ h3 {
 	}
 	.project-tags {
 		font-size: 1em;
-		color: $darkCyan;
+		color: $pattern-darker-green;
 	}
 }
 
@@ -138,7 +140,7 @@ h3 {
 		text-align: center;
 		border: 3px double $charcoalGrey;
 		border-radius: 7px;
-		background-color: rgba(200, 200, 200, 0.9)
+		background-color: rgba(100, 175, 150, 0.9)
 	}
 }
 

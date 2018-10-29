@@ -7,6 +7,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: #CFCFCF;
   font-size: 15px;
   font-family: "Montaga", serif;
   height: 100%;
@@ -17,11 +18,11 @@ a {
 }
 
 a:link {
-  color: #335B67;
+  color: #246D55;
 }
 
 a:visited {
-  color: #0E2D36;
+  color: #246D55;
 }
 
 a:active {
@@ -29,7 +30,7 @@ a:active {
 }
 
 a:hover {
-  color: #713393;
+  color: #9668B0;
 }
 
 p:last-child {
@@ -77,7 +78,7 @@ h3 {
   border: 3px double #323232;
   border-radius: 7px;
   opacity: 1;
-  background-color: rgba(200, 200, 200, 0.9);
+  background-color: rgba(100, 175, 150, 0.9);
 }
 #project-text div:last-child {
   margin-bottom: 0px;
@@ -96,7 +97,7 @@ h3 {
 }
 #project-text .project-tags {
   font-size: 1em;
-  color: #0E7373;
+  color: #246D55;
 }
 
 .demolink {
@@ -125,7 +126,7 @@ h3 {
   text-align: center;
   border: 3px double #323232;
   border-radius: 7px;
-  background-color: rgba(200, 200, 200, 0.9);
+  background-color: rgba(100, 175, 150, 0.9);
 }
 
 .space {
