@@ -10,79 +10,104 @@
 <body>
 <div class="container-fluid container">
 	<div id="main-window">
-		<div id="navigation">
-			<div class="navigation-div shadow"><a href="#projects">Projects</a></div>
-			<div class="navigation-div shadow"><a href="#">Resume</a></div>
-			<div class="navigation-div shadow"><a href="https://github.com/Sheyin/">Github</a></div>
+		<div id="navigation-div">
+			<div id="navigation">
+				<div class="navigation-div shadow"><a href="#projects">Projects</a></div>
+				<div class="navigation-div shadow"><a href="#">Resume</a></div>
+				<div class="navigation-div shadow"><a href="https://github.com/Sheyin/">Github</a></div>
+			</div>
 		</div>
 
-		<div id="main-text">
-			<a name="top"></a>
-			<h1>Lorem Ipsum</h1>
-<h2>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h2>
-<h3>"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</h3>
+		<div id="about-me">
+			<h1>About Me</h1>
+			<a name="about-me"></a>
 
-<p>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel porttitor elit, ac mollis dui. Fusce velit quam, vestibulum sit amet velit eu, viverra volutpat erat. Fusce ut dignissim diam, commodo efficitur metus. Phasellus non eleifend massa. Donec rutrum sapien orci, sit amet ornare leo vulputate et. Nunc commodo tempor metus, quis aliquet neque imperdiet eget. Phasellus vel turpis porttitor felis dictum maximus ac vitae neque. Nunc congue turpis vitae sollicitudin venenatis. Cras id suscipit eros. Aliquam nec finibus quam. Donec eu urna in velit suscipit sollicitudin. Quisque sollicitudin lorem a neque vehicula tempus.
-</p>
-<p>
-	Aliquam vel mattis lorem, non lobortis elit. Pellentesque maximus sodales nunc, et rutrum metus hendrerit vitae. Maecenas sit amet vulputate lorem. Ut facilisis diam venenatis orci laoreet, vitae lobortis eros faucibus. Nulla libero massa, vehicula et posuere quis, finibus id magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed nisl id ipsum mattis porttitor. Donec et imperdiet nulla. Suspendisse id magna ligula. Ut nisi metus, gravida sed dapibus nec, tincidunt ac erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla varius sapien nec est maximus, ut tempor ipsum consequat. Fusce non cursus neque. Nam ac nunc congue, molestie dui eget, blandit est. Ut consequat condimentum dolor. Nulla nec lacus porta, laoreet sem quis, convallis ex.
-</p>
+			<div id="about-me-points">
+				<div class="about-me-point">
+					<h2>I am...</h2>
+					<ul type="disc">
+						<li>A recent graduate in computer science
+						<li>Passionate about coding
+						<li>Enjoying learning new things
+						<li>A self-sufficient team player
+					</ul>
+				</div>
+
+				<div class="about-me-point">
+					<h2>I know how to use...</h2>
+					<ul type="disc">
+						<li>Python
+						<li>Javascript
+						<li>Html
+						<li>CSS
+						<li>SQL
+					</ul>
+				</div>
+
+				<div class="about-me-point">
+					<h2>I've previously used...</h2>
+					<ul type="disc">
+						<li>C / C++
+						<li>Java
+						<li>noSQL
+						<li>Bootstrap
+						<li>node.js
+					</ul>
+				</div>
+			</div>
 		</div>
 
-		<div id="project-text">
+		<div id="projects">
 			<a name="projects"></a>
 			<h1>Projects</h1>
 
-<div class="project shadow mb-5">
-	<img src="image/bookreviewsite.jpg">
-	<span class="project-header">Book Review Site</span>
-	<span class="demolink">[<a href="http://projectheron.herokuapp.com/">demo</a>]</span>
-	A mobile-responsive mock book review site that allows users to search and leave reviews for a selection of books.  Flask is used to serve pages and connect to a PostgreSQL database hosted on Heroku.  The site also performs authentication and utilizes Goodreads’s api to retrieve aggregate ratings in addition to allowing users to rate and review books.  The site also provides api access via JSON.
-	<span class="project-tags">Python, Javascript, SQL</span>
+			<div class="project shadow mb-5">
+				<img src="image/bookreviewsite.jpg">
+				<span class="project-header">Book Review Site</span>
+				<span class="demolink">[<a href="http://projectheron.herokuapp.com/">demo</a>]</span>
+				A mobile-responsive mock book review site that allows users to search for books.  Flask is used to serve pages and connect to a PostgreSQL database hosted on Heroku.  The site also performs authentication, allows users to rate and review books, and utilizes Goodreads’s api to retrieve ratings.  The site also provides api access via JSON.
+				<span class="project-tags">Python, Javascript, SQL</span>
+			</div>
+
+			<div class="project shadow mb-5">
+				<img src="image/unscrambler.jpg">
+				<span class="project-header">Word Unscrambler</span>
+				<span class="demolink">[<a href="http://sheyin.pythonanywhere.com/">demo</a>] [<a href="https://github.com/Sheyin/word-unscrambler">source</a>]</span>
+				Generates a list of possible words / permutations in order to solve word puzzles.  The backend is in Python serving pages with Flask, while the front end uses Javascript for input validation and display.
+				<span class="project-tags">Python, Javascript</span>
+			</div>
+
+			<div class="project shadow mb-5">
+				<img src="image/flack.jpg">
+				<span class="project-header">Flack</span>
+				<span class="demolink">[<a href="https://damp-depths-57355.herokuapp.com">demo</a>]</span>
+				Chat site in the style of Slack, utilizing Flask and sockets.io to provide realtime chat communication between multiple users.  It save chat history and allows users to create new chat channels.
+				<span class="project-tags">Python, Javascript</span>
+			</div>
+
+			<div class="project shadow mb-5">
+				<img src="image/deadinthewater.jpg">
+				<span class="project-header">Dead in the Water</span>
+				<span class="demolink">[<a href="https://github.com/Sheyin/CS467-Serpens-Adventure/tree/master">source</a>]</span>
+				A console-based work of interactive fiction.  Group project written in Python 2.7.5, later converted to be compatible with Python 3.6.  My contribution included input parsing, ui and level design.
+				<span class="project-tags">Python</span>
+			</div>
+
+			<div class="project shadow mb-5">
+				<img src="image/discordlogo.jpg">
+				<span class="project-header">Lurky</span>
+				<span class="demolink">[<a href="https://github.com/Sheyin/Lurky">source</a>]</span>
+				A Discord chatbot that performs miscellaneous tasks, including greeting people, recording and retrieving quotes, and performing automatic currency conversions.  Utilizes the discord.py library.
+				<span class="project-tags">Python</span>
+			</div>
+		</div> <!-- Project-text -->
+
+		<div id="credits">
+			<h2>Credits:</h2>
+			Background image by Bryan Colosky via <a href="https://unsplash.com/@bryancolosky">Unsplash</a>.
+		</div>
+	</div>
 </div>
-
-<div class="project shadow mb-5">
-	<img src="image/unscrambler.jpg">
-	<span class="project-header">Word Unscrambler</span>
-	<span class="demolink">[<a href="http://sheyin.pythonanywhere.com/">demo</a>] [<a href="https://github.com/Sheyin/word-unscrambler">source</a>]</span>
-	Generates a list of possible words / permutations in order to solve word puzzles.  The backend is in Python serving pages with Flask, while the front end uses Javascript for input validation and display.
-	<span class="project-tags">Python, Javascript</span>
-</div>
-
-<div class="project shadow mb-5">
-	<img src="image/flack.jpg">
-	<span class="project-header">Flack</span>
-	<span class="demolink">[<a href="https://damp-depths-57355.herokuapp.com">demo</a>]</span>
-	Chat site in the style of Slack, utilizing Flask and sockets.io to provide realtime chat communication between multiple users.  It save chat history and allows users to create new chat channels.
-	<span class="project-tags">Python, Javascript</span>
-</div>
-
-<div class="project shadow mb-5">
-	<img src="image/deadinthewater.jpg">
-	<span class="project-header">Dead in the Water</span>
-	<span class="demolink">[<a href="https://github.com/Sheyin/CS467-Serpens-Adventure/tree/master">source</a>]</span>
-	A console-based work of interactive fiction.  Group project written in Python 2.7.5, later converted to be compatible with Python 3.6.  My contribution included input parsing, ui and level design.
-	<span class="project-tags">Python</span>
-</div>
-
-<div class="project shadow mb-5">
-	<img src="image/discordlogo.jpg">
-	<span class="project-header">Lurky</span>
-	<span class="demolink">[<a href="https://github.com/Sheyin/Lurky">source</a>]</span>
-	A Discord chatbot that performs miscellaneous tasks, including greeting people, recording and retrieving quotes, and performing automatic currency conversions.  Utilizes the discord.py library.
-	<span class="project-tags">Python</span>
-</div>
-</div> <!-- Project-text -->
-
-<div id="credits">
-<h2>Credits:</h2>
-Background image by Bryan Colosky via <a href="https://unsplash.com/@bryancolosky">Unsplash</a>.
-</div>
-
-
-</div>
-
 
 <script src="script.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

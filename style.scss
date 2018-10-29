@@ -11,6 +11,7 @@ $off-white: #CFCFCF;
 $pattern-light-green: #64AF97;
 $pattern-darker-green: #246D55;
 $border: solid $charcoalGrey;
+$headingFont: 'Amaranth', sans-serif;
 
 html {
 	height: 100%;
@@ -56,16 +57,16 @@ img {
 }
 
 h1 {
-	font-family: 'Amaranth', sans-serif;
+	font-family: $headingFont;
 }
 
 h2 {
-	font-family: 'Amaranth', sans-serif;
+	font-family: $headingFont;
 	font-size: 1.5em;
 }
 
 h3 {
-	font-family: 'Amaranth', sans-serif;
+	font-family: $headingFont;
 	font-size: 1.2em;
 	font-style: italic;
 }
@@ -82,13 +83,34 @@ h3 {
 	border-right: 5px $border;
 }
 
-#main-text {
+
+#about-me {
 	padding-top: 5%;
 	margin-left: 5%;
 	margin-right: 5%;
 }
 
-#project-text {
+#about-me-points {
+	display: flex;
+	justify-content: space-between;
+
+	@media (max-width: 799px) {
+		flex-direction: column;
+	}
+	@media (min-width: 800px) {
+		flex-direction: row;
+	}
+}
+
+.about-me-point {
+	padding: 5px;
+	border: 3px $border;
+	border-radius: 7px;
+	background-color: rgba(100, 175, 150, 0.9)
+}
+
+
+#projects {
 	padding-top: 5%;
 	margin-left: 5%;
 	margin-right: 5%;
@@ -111,12 +133,23 @@ h3 {
 	div > img {
 		float: left;
 		text-align: left;
-		margin-left: 0px;
-		margin-top: 0px;
-		margin-bottom: 0px;
-		margin-right: 15px;
-		border-right: 3px $border;
-		width: 200px;
+		width: 220px;
+		height: 220px;
+
+		@media (max-width: 399px) {
+			border-bottom: 3px $border;
+			margin-left: 0px;
+			margin-top: 0px;
+			margin-right: 0px;
+			margin-bottom: 15px;
+		}
+		@media (min-width: 400px) {
+			border-right: 3px $border;
+			margin-left: 0px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			margin-right: 15px;
+		}
 	}
 	.project-tags {
 		font-size: 1em;
@@ -138,14 +171,20 @@ h3 {
 	background-color: white;
 }
 
+#navigation-div {
+	padding-top: 5px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
 #navigation {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	font-size: 1.5em;
 	div {
-		min-width: 10%;
+		min-width: 15%;
 		text-align: center;
 		border: 3px $border;
 		border-radius: 7px;
