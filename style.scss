@@ -44,11 +44,17 @@ img {
 	width: 100%;
 }
 
+h1 {
+	font-family: 'Amaranth', sans-serif;
+}
+
 h2 {
+	font-family: 'Amaranth', sans-serif;
 	font-size: 1.5em;
 }
 
 h3 {
+	font-family: 'Amaranth', sans-serif;
 	font-size: 1.2em;
 	font-style: italic;
 }
@@ -83,9 +89,8 @@ h3 {
 	div:last-child {
 		margin-bottom: 0px;
 	}
+
 	div > span {
-		font-size: 1.3em;
-		font-weight: bold;
 		display: block;
 	}
 
@@ -102,6 +107,16 @@ h3 {
 		font-size: 1em;
 		color: $darkCyan;
 	}
+}
+
+.demolink {
+	font-size: 1em;
+}
+
+.project-header {
+	font-weight: bold;
+	display: block;
+	font-size: 1.5em;
 }
 
 #welcometext {
