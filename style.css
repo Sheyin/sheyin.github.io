@@ -91,7 +91,7 @@ h3 {
 
 .colored-text-content-box {
   border: 3px solid #323232;
-  border-radius: 7px;
+  border-radius: 10px;
   margin-bottom: 5%;
   padding: 5px;
   background-color: #0D8376;
@@ -116,8 +116,7 @@ h3 {
 }
 #project-box .project {
   border: 3px solid #323232;
-  border-radius: 7px;
-  opacity: 1;
+  border-radius: 10px;
   background-color: #0D8376;
   padding: 0 0 0 0;
   box-shadow: 7px 7px 7px #777777;
@@ -199,6 +198,10 @@ h3 {
   font-size: 2em;
 }
 
+.btn {
+  border-radius: 10px;
+}
+
 #welcometext {
   background-color: white;
 }
@@ -221,7 +224,7 @@ h3 {
   min-width: 15%;
   text-align: center;
   border: 3px solid #323232;
-  border-radius: 7px;
+  border-radius: 10px;
   background-color: #0D8376;
 }
 
