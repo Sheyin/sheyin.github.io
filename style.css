@@ -8,7 +8,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #CFCFCF;
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Montaga", serif;
   height: 100%;
 }
@@ -18,15 +18,15 @@ a {
 }
 
 a:link {
-  color: #005544;
+  color: black;
 }
 
 a:visited {
-  color: #005544;
+  color: black;
 }
 
 a:active {
-  color: #66DBC4;
+  color: #9668B0;
 }
 
 a:hover {
@@ -94,7 +94,8 @@ h3 {
   border-radius: 7px;
   margin-bottom: 5%;
   padding: 5px;
-  background-color: #2CC0A3;
+  background-color: #0D8376;
+  box-shadow: 7px 7px 7px #777777;
 }
 
 #projects {
@@ -117,11 +118,12 @@ h3 {
   border: 3px solid #323232;
   border-radius: 7px;
   opacity: 1;
-  background-color: #2CC0A3;
+  background-color: #0D8376;
   padding: 0 0 0 0;
+  box-shadow: 7px 7px 7px #777777;
 }
 @media (max-width: 769px) {
-  #project-box .project img {
+  #project-box .project .project-example-img {
     width: 100%;
     display: block;
   }
@@ -137,7 +139,7 @@ h3 {
   }
 }
 @media (min-width: 770px) {
-  #project-box .project img {
+  #project-box .project .project-example-img {
     width: 300px;
     height: 300px;
     float: left;
@@ -155,22 +157,41 @@ h3 {
     padding-left: 0px;
   }
 }
-#project-box .project div > span {
-  display: block;
-}
 #project-box .project .project-tags {
-  font-size: 1em;
-  color: #9668B0;
+  display: block;
+  padding: 3px;
 }
 
-.demolink {
+.project-tag {
+  display: inline-block;
   font-size: 1em;
+  background-color: #9668B0;
+  border-radius: 10px;
+  border: 1.5px solid #323232;
+  padding: 0px;
+}
+.project-tag img {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  object-fit: contain;
+  overflow: hidden;
+  border-radius: 0px;
+  vertical-align: middle;
+}
+.project-tag .project-tag-language {
+  display: initial;
+  padding: 0px;
+  vertical-align: middle;
+  font-size: 0.9em;
+  font-family: "Acme", sans-serif;
 }
 
 .project-header {
   font-weight: bold;
   display: block;
-  font-size: 1.5em;
+  font-family: "Acme", sans-serif;
+  font-size: 2em;
 }
 
 #welcometext {
@@ -196,7 +217,7 @@ h3 {
   text-align: center;
   border: 3px solid #323232;
   border-radius: 7px;
-  background-color: #2CC0A3;
+  background-color: #0D8376;
 }
 
 .space {
