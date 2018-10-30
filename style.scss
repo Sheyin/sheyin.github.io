@@ -34,11 +34,11 @@ a {
 }
 
 a:link {
-	color: black;
+	color: $lightTeal;
 }
 
 a:visited {
-	color: black;
+	color: $lightTeal;
 }
 
 a:active {
@@ -182,6 +182,11 @@ h3 {
 			padding: 3px;
 		}
 	}
+}
+
+.project-link {
+	font-family: 'Acme', sans-serif;
+	font-size: 3em;
 }
 
 .project-tag {

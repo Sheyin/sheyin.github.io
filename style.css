@@ -18,11 +18,11 @@ a {
 }
 
 a:link {
-  color: black;
+  color: #44A298;
 }
 
 a:visited {
-  color: black;
+  color: #44A298;
 }
 
 a:active {
@@ -160,6 +160,11 @@ h3 {
 #project-box .project .project-tags {
   display: block;
   padding: 3px;
+}
+
+.project-link {
+  font-family: "Acme", sans-serif;
+  font-size: 3em;
 }
 
 .project-tag {
