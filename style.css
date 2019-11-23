@@ -219,7 +219,7 @@ h3 {
 }
 .project-tag .project-tag-language {
   display: initial;
-  padding: 0px;
+  padding: 2px;
   vertical-align: middle;
   font-size: 0.9em;
   font-family: "Acme", sans-serif;
