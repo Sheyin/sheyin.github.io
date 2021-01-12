@@ -1,112 +1,83 @@
 <html>
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Amaranth"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Cormorant+Upright|Fredericka+the+Great|Laila|Montaga"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Acme"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Cabin|Gothic+A1"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Portfolio - About me</title>
-    <meta property="og:url" content="https://sheyin.github.io/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Cheryl See - Personal Site" />
-    <meta
-      property="og:description"
-      content="My personal website, with links to some of my projects."
-    />
-    <meta
-      property="og:image"
-      content="https://sheyin.github.io/image/open_graph_preview_image.jpg"
-    />
-  </head>
+	<head>
+		<title>My site</title>
+		<link rel="stylesheet" href="index.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+	</head>
+	<body onload="page_loaded()">
+		<div class="entire-display">
+			<div class="computer-monitor">
+				<div class="computer-screen">
+					<!-- The text can go over the iframe... I think -->
+					<iframe id="computer-screen-frame"
+						width="100%"
+						height="100%"
+						name="screen"
+						sandbox="allow-top-navigation allow-same-origin allow-scripts allow-popups"
+						src="about:blank">
+					</iframe>
+					<div class="computer-text" id="computer-text">
+						<noscript>This site might not work correctly without Javascript.  If you'd like, you can visit the original/vanilla site <a href="https://sheyin.github.io/projects.html" target="_top">here</a>.</noscript>
+					</div>
+					<div class="mascot" id="mascot">
+						<div class="mascot-body">
+							{}
+							<div class="mascot-eye mascot-eye-left">
+								<div class="mascot-pupil"></div>
+							</div>
+							<div class="mascot-eye mascot-eye-right">
+								<div class="mascot-pupil"></div>
+							</div>
+							<div class="mascot-mouth"></div>
+						</div>
+						<div class="mascot-speech-bubble">
+							<div class="mascot-close" onClick="close_mascot()"><span class="mascot-close-text">X</span></div>
+							<div class="mascot-speech-bubble-text" id="speech-bubble"></div>
+							<div class="mascot-speech-bubble-line"></div>
+						</div>
+					</div>
+				</div>
 
-  <body>
-    <div class="container-fluid container">
-      <div id="main-window">
-        <div id="navigation-div">
-          <div id="navigation">
-            <div class="navigation-div shadow">
-              <a href="projects.html">Projects</a>
-            </div>
-            <div class="navigation-div shadow">
-              <a href="aboutme.html">About Me</a>
-            </div>
-            <div class="navigation-div shadow">
-              <a href="https://github.com/Sheyin/" target="_new">Github</a>
-            </div>
-          </div>
-        </div>
+				<div class="post-it-notes">
+					<a href="https://sheyin.github.io/projects.html" target="screen" onClick="project_note()">
+						<div class="post-it-note projects-link">
+							<div id="projects">Projects</div>
+						</div>
+					</a>
+					<a href="https://github.com/Sheyin/" target="_new" onClick="github_note()">
+						<div class="post-it-note github-link">
+							<div id="github">Github</div>
+						</div>
+					</a>
+					<a href="#" onClick="secret_note()">
+						<div class="post-it-note top-secret-link">
+							<div id="top-secret">Password: <br /> abc123</div>
+						</div>
+					</a>
+				</div>
+				<div class="computer-stand">
+					<div class="computer-stand-neck"></div>
+					<div class="computer-stand-base"></div>
+				</div>
+			</div>
 
-        <div id="about-me">
-          <h1>Welcome!</h1>
 
-          <div id="about-me-points">
-            <div class="about-me-point colored-text-content-box">
-              I am a programmer that enjoys a mix of front end and full stack
-              work. If you've reached this page, it means you've probably
-              followed a link from my resume and wanted to learn more about me.
-              I'm hoping to start working as a developer soon, so if you like
-              what you see, please reach out to me!
+			<div class="rubber-ducky">
+				<div class="rubber-ducky-head" onClick="duck_clicked()">
+					<div class="rubber-ducky-beak" onClick="duck_clicked()"></div>
+					<div class="rubber-ducky-eye" onClick="duck_clicked()">
+						<div class="rubber-ducky-pupil" onClick="duck_clicked()"></div>
+					</div>
+				</div>
+				<div class="rubber-ducky-body" onClick="duck_clicked()">
+					<div class="rubber-ducky-wing" onClick="duck_clicked()"></div>
+				</div>
+			</div>
 
-              <ul type="disc">
-                <li>
-                  <a href="projects.html">Projects</a>: A selection of some of
-                  my personal projects.
-                </li>
-                <li>
-                  <a href="aboutme.html">About me:</a> A humble overview of some
-                  of my skills, background, and interests.
-                </li>
-                <li>
-                  <a href="https://github.com/Sheyin/">Github</a>: A link to my
-                  github, which includes the source code for most of my
-                  projects.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+		</div>
+	</body>
 
-        <div id="credits">
-          <h2>Credits:</h2>
-          Background image by Bryan Colosky via
-          <a href="https://unsplash.com/@bryancolosky">Unsplash</a>.
-        </div>
-      </div>
-    </div>
-
-    <script src="script.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+	<audio id="audio_quack" src="audio/quack.wav" preload="auto"></audio>
+	<script src="new_script.js"></script>
 </html>
