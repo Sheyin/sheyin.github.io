@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>The Chef's Special</title>
+		<link rel="stylesheet" href="./style/restaurant.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Risque&display=swap" rel="stylesheet">
+	</head>
+
+	
+	<body>
+		<header>The Chef's Special</header>
+
+		<div class="grid-container">
+			<div class="grid-item image">
+				<img src="./image/restaurant/noodles.jpg" alt="Delicious noodles">
+			</div>
+			<div class="grid-item text">
+				Great food, straight from us to you.<br />
+				<button id="ordering" onclick="ordering()">Order online now!</button>
+			</div>
+	
+	
+			<div class="grid-item text">
+				Make your selection from a carefully curated menu of dishes we offer. <br />
+				<button id="menu" onclick="menu()">Menu and Prices</button>
+			</div>
+			<div class="grid-item image hidden">
+				<img src="./image/restaurant/fish.jpg" alt="Fresh fish">
+			</div>
+
+	
+			<div class="grid-item image hidden">
+				<img src="./image/restaurant/duck.jpg" alt="Crispy duck">
+			</div>
+			<div class="grid-item text">
+				Our restauraunt is conveniently located at the intersection of Main and First Street. <br />
+				<button id="map">Directions</button>
+			</div>
+
+			<div class="grid-item-footer hidden"></div>
+			<div class="grid-item-footer">
+				<footer>Copyright 2021.  The Chef's Special is an imaginary restaurant.</footer>
+			</div>
+		</div>
+
+		<div id="overlay" style="display: none">
+			<iframe src="about:blank"></iframe>
+		</div>
+
+		<script src="restaurant_scripts.js"></script>
+	</body>
+</html>

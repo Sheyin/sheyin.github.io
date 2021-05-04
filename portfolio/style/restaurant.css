@@ -1,0 +1,117 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 3% 5%;
+  grid-auto-rows: auto;
+}
+
+.bowl {
+  height: 30px;
+  width: 100px;
+  border-radius: 10% 10% 50% 50%;
+  background-color: #fac748;
+}
+
+button {
+  border: none;
+  padding: 15px;
+  font-family: "Della Respira", serif;
+  color: #1e0409;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1em;
+  background-color: #fac748;
+  box-shadow: -3px 5px 7px #02111b;
+  margin-top: 10px;
+}
+
+#overlay {
+  display: relative;
+  z-index: 1;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  border: 1px solid black;
+  border-radius: 50% 50% 50% 50%;
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 3px 10px 15px #02111b;
+  margin: auto;
+}
+
+header {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+header {
+  font-family: "Risque", cursive;
+  font-size: 3em;
+  color: #1e0409;
+  text-shadow: -3px 10px 15px #fac748;
+}
+
+footer {
+  font-size: 0.5em;
+  text-align: right;
+}
+
+body {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body,
+html {
+  margin: 0px;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #550c18;
+  color: #ababab;
+  text-shadow: #1e0409 1px 0 10px;
+  font-family: "Della Respira", serif;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  body {
+    font-size: 1.3em;
+  }
+
+  header {
+    font-size: 2.3em;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=restaurant.css.map */

@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<title>Random CSS Artwork</title>
+	</head>
+
+	<body>
+		I started taking an interest in CSS artwork when I saw other people post their creations, and thought 
+		"that sounds pretty cool".  After trying it, I know it's pretty impractical - but still an interesting
+		challenge to try.  Aside from this website (the monitor, duck, and mascot are all done in css!) here's
+		a few things I've tried to make.
+
+		<div class="css-art-collection">
+
+			<div class="css-art-display">
+				<div class="css-art-header"><a href="https://codepen.io/Sheyin/pen/MWjERxm">My Among Us Character</a></div>
+				<div class="css-art-description">
+					This was my first attempt.  Making a generic space character wasn't
+					too bad - but it forced me to improve my understanding of css positioning and layers.
+					Making the hat proved to be even more of a challenge than the body since I wanted to get the
+					shape as accurate as possible, which required more bits and pieces.  Learning how to do triangles
+					was neat, and I was surprised how that kind of shape gets created.
+					<br />
+					Then after some feedback from family, I decided a stretch goal would be to try animating it
+					a bit, like the ejection animation.  Now, technically it's a bit incorrect, since the legs
+					would be drawn a bit differently, but I didn't really know how to transition between the
+					standing-to-flailing states and it was beyond the scope of my project anyways.  So I learned
+					how to do a quick animation (rotation), which raised a few more issues:
+					<ol type="1">
+						<li>I needed more space.  Since I hadn't planned for more than the original vanilla
+							body, I didn't think of leave extra space to work with (hat, wanting to rotate, etc).
+							The rotation caused the animation to go partly offscreen.
+						</li>
+						<li>Moving things proved to be more difficult than originally anticipated.  Part of this
+							was because I didn't really understand what I was doing when I laid out the original divs
+							and positioning.  I also didn't understand why sometimes adding a margin would work,
+							and sometimes it wouldn't (later I learned about "margin collapsing").
+						</li>
+						<li>
+							CSS lets you determine the point of origin when rotating.  This actually would have 
+							saved me a bunch of time trying to fix the first two issues, but it wasn't quite working
+							when I'd first tried it.  Once I'd tweaked it to where I'd wanted it, it was just
+							a matter of figuring out the speed and distance, as well as resetting it back to a 
+							default state.
+						</li>
+					</ol>
+					<br />
+					Adding the text was actually a little trickier than expected, since (by googling/stack overflow)
+					it seemed that the only way to get the effect I wanted with Javascript was to use callbacks on
+					each letter to implement the delay effect.  It actually introduces another potential bug - I was
+					able to avoid it by disabling the button when activated, but if spammed, it's a bit trickier
+					to "cancel" the callbacks, causing the letters to get all jumbled with new and old messages.
+					I'm wondering now if there's a better way to implement this effect.
+					<br />
+					For a first try at CSS art, this mini-project actually taught me quite a bit about CSS and of 
+					things that I had minimal understanding.  I'm sure that I have more to learn though!
+				</div>
+			</div>
+
+
+			<div class="css-art-display">
+				<div class="css-art-header">This page</div>
+				<div class="css-art-description">
+					I'd toyed with this concept on my website for a while, but I had no idea how to implement 
+					any of it.  Once I started though, it was surprisingly easy to pull off!  I incorporated
+					much of what I'd learned from the Among Us project, and this time experimented with
+					box shadows.  At first I just meant to make the monitor stand out a bit, but after 
+					tweaking it a little, I was surprised how close it appeared to a proper 3D drawing.
+					<br />
+					The duck was another little detail - modelled after an actual rubber ducky sitting on
+					my desk.  At first I had planned to use border colors much like I did with my earlier
+					attempt, but I found that using the box shadow again was actually good enough.  And I mean,
+					in retrospect, that's really the intent behind a box shadow - to give things a 3D effect!
+					<br />
+					My original design was simply text on a screen, utilizing the slow-text effect I'd written
+					up before.  However, when I added the iframe to show my projects page, I found the text
+					to be intrusive and hard to read.  I guess the text wasn't really necessary, but I really
+					wanted to keep this part of the idea.  So, I thought back to something not seen in a while -
+					Microsoft's Clippy, which was both annoying and cute.  I thought about different animals
+					and faces, but didn't really want to put too much work into this design - then I thought,
+					why not brackets? It seemed very appropriate for a page about programming!  He wasn't 
+					too difficult to add after that, and I added a method to dismiss him last (just in case - 
+					it wouldn't do to really have him block the page!)
+					<br />
+					This project was the first time I'd utilized an iframe.  Originally I'd thought to make
+					this a static page, with the background changing on the monitor as different links
+					were selected.  But then I'd have to redo the projects, and figure out how the links
+					worked, etc... this is where the idea of the post-its and the iframe came in.  The iframe
+					looked surprisingly good on the monitor, and I added the post-its to ensure that there was
+					always a navigation method available to the user.  I learned that there are some
+					caveats to using iframes - ex. users are not allowed to simply visit Github in an iframe - 
+					but not only did it fit the theme well, it also made the monitor look better by adding
+					a bit of a border where it was embedded.
+					<br />
+					There are a few more things I'd like to add to this page still - I had originally intended
+					to overhaul my original site with a new design, and I was greatly pleased that I could
+					sort of do that by embedding it into the iframe with this design, while not having to 
+					actually redesign the old page.  I also have a plan for the password bit, but I haven't
+					quite refined that idea yet.
+				</div>
+			</div>
+
+			<!-- // Blank template
+				<div class="css-art-display">
+					<div class="css-art-header"></div>
+					<div class="css-art-description"></div>
+				</div>
+			-->
+		
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,129 @@
+// image filenames
+$noodles: "../../public/image/restaurant/noodles.jpg";
+$fish: "../../public/image/restaurant/fish.jpg";
+$duck: "../../public/image/restaurant/duck.jpg";
+$grey: "../../public/image/restaurant/grey.gif";
+
+// colors
+$darkred: #550c18;
+$gold: #fac748;
+$darkblack: #02111b;
+$lightgrey: #ababab;
+$grey: #66717e;
+$text: #1e0409;
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 3% 5%;
+	grid-auto-rows: auto;
+}
+
+.bowl {
+	height: 30px;
+	width: 100px;
+	border-radius: 10% 10% 50% 50%;
+	background-color: $gold;
+}
+
+button {
+	border: none;
+	padding: 15px;
+	font-family: "Della Respira", serif;
+	color: $text;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 1em;
+	background-color: $gold;
+	box-shadow: -3px 5px 7px $darkblack;
+	margin-top: 10px;
+}
+
+#overlay {
+	display: relative;
+	z-index: 1;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.image {
+	display: flex;
+	align-items: center;
+}
+
+img {
+	border: 1px solid black;
+	border-radius: 50% 50% 50% 50%;
+	max-width: 90%;
+	max-height: 90%;
+	box-shadow: 3px 10px 15px $darkblack;
+	margin: auto;
+}
+
+header {
+	font-size: 2em;
+	text-align: center;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+header {
+	font-family: "Risque", cursive;
+	font-size: 3em;
+	color: $text;
+	text-shadow: -3px 10px 15px $gold;
+}
+
+footer {
+	font-size: 0.5em;
+	text-align: right;
+}
+
+body {
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+body,
+html {
+	margin: 0px;
+	height: 100%;
+	box-sizing: border-box;
+	background-color: $darkred;
+	color: $lightgrey;
+	text-shadow: $text 1px 0 10px;
+	font-family: "Della Respira", serif;
+}
+
+@media screen and (max-width: 600px) {
+	.grid-container {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	body {
+		font-size: 1.3em;
+	}
+
+	header {
+		font-size: 2.3em;
+	}
+
+	footer {
+		text-align: center;
+	}
+}
