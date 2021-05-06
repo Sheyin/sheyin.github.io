@@ -1,13 +1,13 @@
 
+
+
+
+/* 
+// Finally got this working and... it's no longer needed.
 window.addEventListener('load', (event) => {
 	console.log('page is fully loaded');
 	// Adding event isteners to the cards, which makes text visible on mouseover
 	const cards = document.getElementsByClassName('card');
-/*
-	for(var i=0; i < 10; i++){
-		console.log(i);
-	} */
-
 	for(let i=0; i<cards.length; i++) {
 		//card.addEventListener('click', doFlip);
 		cards[i].addEventListener('mouseenter', doMakeTextVisible);
@@ -26,4 +26,4 @@ const doMakeTextVisible = (event) => {
 			card.children[i].classList.toggle('visible-card-content');
 		}
 	} 
-}
+} */

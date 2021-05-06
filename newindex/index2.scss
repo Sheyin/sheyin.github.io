@@ -1,28 +1,26 @@
 div.all-content {
-	width: 80%;
-	height: 80%;
 	/* background-color: blue; */
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 50px;
-	position: relative;
+	margin-top: 0;
+	position: static;
+	z-index: 1;
+	width: 100%;
 }
 
 div.card-holder {
 	display: flex;
-	position: static;
+	position: absolute;
 	flex-direction: row;
 	justify-content: space-evenly;
 	width: 100%;
-	height: 50%;
+	margin-top: 10px;
 }
 
 div.card {
 	display: block;
 	max-width: 300px;
 	width: 100%;
-	height: 100%;
-	margin: 20px;
 	border-radius: 77px;
 	background: #d4deed;
 	box-shadow: 30px 30px 65px #a5adb9, -30px -30px 65px #ffffff;
@@ -31,39 +29,61 @@ div.card {
 	transition-timing-function: linear;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
 div.card:hover {
 	border-radius: 77px;
-	background: #506e9b;
+	background: #8ea3be;
 	box-shadow: 30px 30px 65px #a5adb9, -30px -30px 65px #ffffff;
-	/* animation: fadeTextOut 1.5s linear 0s; */
-}
-
-div.front {
-	border-radius: 77px;
-	/* animation: fadeTextIn 1.5s linear 0s; */
-}
-
-.card-content {
 	position: relative;
-	top: 40px;
-	left: 20px;
-	font-size: 2em;
-	height: 100%;
+	z-index: 10;
+	.hidden-card-content {
+		display: block;
+		color: #000000;
+		animation: fadeTextIn 1s linear 0s;
+		margin: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 20px;
+	}
+}
+
+div.card-content {
 	width: 100%;
 }
 
-div.front > .card-content {
-	animation: fadeTextIn 1s linear 0s;
+.card-slot {
+}
+
+.card-title {
+	font-size: 2em;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	display: block;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .hidden-card-content {
 	display: none;
 }
 
-.visible-card-content {
-	display: block;
-	animation: fadeTextIn 1s linear 0s;
-	color: #000000;
+.main-content {
+	position: relative;
+	top: 110px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: 700px;
+	border: 10px double black;
+	border-radius: 30px;
+	padding: 10px;
+	z-index: 1;
 }
 
 body,

@@ -1,0 +1,129 @@
+div.all-content {
+  /* background-color: blue; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  position: static;
+  z-index: 1;
+  width: 100%;
+}
+
+div.card-holder {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 10px;
+}
+
+div.card {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 77px;
+  background: #d4deed;
+  box-shadow: 30px 30px 65px #a5adb9, -30px -30px 65px #ffffff;
+  transition-property: background;
+  transition-duration: 0.7s;
+  transition-timing-function: linear;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+div.card:hover {
+  border-radius: 77px;
+  background: #8ea3be;
+  box-shadow: 30px 30px 65px #a5adb9, -30px -30px 65px #ffffff;
+  position: relative;
+  z-index: 10;
+}
+div.card:hover .hidden-card-content {
+  display: block;
+  color: #000000;
+  animation: fadeTextIn 1s linear 0s;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+
+div.card-content {
+  width: 100%;
+}
+
+.card-title {
+  font-size: 2em;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden-card-content {
+  display: none;
+}
+
+.main-content {
+  position: relative;
+  top: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 700px;
+  border: 10px double black;
+  border-radius: 30px;
+  padding: 10px;
+  z-index: 1;
+}
+
+body,
+html {
+  margin: 0px;
+  height: 100%;
+  box-sizing: border-box;
+  /* background-color: #9bb9d1;*/
+  background-color: #d4deed;
+  color: black;
+}
+
+@keyframes cardFlipFront {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+@keyframes fadeTextIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes cardFlipBack {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes fadeTextOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+/*# sourceMappingURL=index2.css.map */
