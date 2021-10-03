@@ -41,14 +41,12 @@
 
 		<main>
 			
-			<section id="skills">
-				<h2 class="header">Skills</h2>
+			<section id="skills" class="section-grid-container">
+				<h2>Skills</h2>
 
-				<div class="skillboxes">
-
-					<div class="skillbox">
+				<div id="skillboxes">
+					<div>
 						<p>The languages with which I am most proficient are:
-			
 							<ul>
 								<li>Javascript</li>
 								<li>Python</li>
@@ -58,7 +56,7 @@
 						</p>
 					</div>
 		
-					<div class="skillbox">
+					<div>
 						<p>Some other languages I have dabbled in include:
 						<ul>
 							<li>C</li>
@@ -69,7 +67,7 @@
 						</ul></p>
 					</div>
 		
-					<div class="skillbox">
+					<div>
 						<p>Some tools and frameworks I have used include:
 						<ul>
 							<li>React (Javascript)</li>
@@ -78,56 +76,50 @@
 							<li>Bootstrap</li>
 						</ul></p>
 					</div>
-
 				</div>
 	
 	
-				<p>I have worked in different environments, with my preferred operating system being
+				<aside>I have worked in different environments, with my preferred operating system being
 					<span class="highlight">Windows</span>, and my preferred IDE being 
 					<span class="highlight">Visual Studio Code</span>.
-				</p>
+				</aside>
 			</section>
 			
-			<section id="projects">
-		
-				<h2 class="header">Projects</h2>
-				
+			<section id="projects" class="section-grid-container">
+				<h2 class="section-grid-header">Projects</h2>
 
-				<article class="project">
-					<div class="project-left">
+				<div class="section-grid-content">
+					<article class="project-container">
 						<h3>Word Unscrambler</h3>
 						<p>A web app that takes a word jumble and attempts to figure out what word the letters form.  It categorizes the results based on likelihood
 							of a successful word, with confirmed results being matched against a dictionary of words.  The backend uses Python and mySQL (database) and
 							pages are served using Flask templates.  Additional input validation is performed with Javascript and it is styled using Bootstrap.
 						</p>
-						<div class="project-links">
+						<div>
 							<a href="http://sheyin.pythonanywhere.com">Live Site</a>
 							<a href="https://github.com/Sheyin/word-unscrambler">Repository (Github)</a>
 						</div>
-					</div>
-
-
-					<img src="image/wordunscrambler.jpg" alt="Word Unscrambler">
-				</article>
-
-				<article class="project">
-					<div class="project-left">
+						<img src="image/wordunscrambler.jpg" alt="Word Unscrambler">
+					</article>
+	
+					<article class="project-container">
 						<h3>Book Review Site</h3>
 						<p>
 							A mock book review site that allows users to search for books by title/author/ISBN.  It allows authenticated users to rate and review books,
 							with ratings fetched using Goodread's api.  The site itself also provides api access via json.  
 							The backend uses Flask (Python) and the book information uses PostgreSQL, with the entire site being hosted on Heroku.  Project was created for Harvard's CS50W course.
 						</p>
-						<div class="project-links">
+						<div>
 							<a href="http://projectheron.herokuapp.com">Live Site</a>
 						</div>
-					</div>
+						<img src="image/bookreview.jpg" alt="Book Review Site">
+					</article>
+	
+					<article>
+					</article>
+				</div>
+				
 
-					<img src="image/bookreview.jpg" alt="Book Review Site">
-				</article>
-
-				<article>
-				</article>
 			</section>
 		</main>
 

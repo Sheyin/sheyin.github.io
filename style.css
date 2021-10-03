@@ -1,11 +1,8 @@
 body {
-  display: grid;
-  grid-template-columns: [left-space] 20% [body] auto [right-space] 20%;
-  grid-template-rows: [nav] 5% [introduction] 30% [main] auto;
-  grid-template-areas: ". nav ." "introduction introduction introduction" "headline headline ." ". body .";
-  /* grid-column-gap: 4ch; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-  /* padding-left: 4ch; */
   margin-left: auto;
   margin-right: auto;
   font-family: Arial;
@@ -18,7 +15,6 @@ header {
 }
 
 nav {
-  grid-area: nav;
   position: sticky;
   top: 0;
   display: flex;
@@ -28,6 +24,7 @@ nav {
   max-height: 15%;
   scroll-behavior: smooth;
   padding-top: 3ch;
+  margin-bottom: 2em;
 }
 
 nav > a > button {
@@ -42,64 +39,87 @@ nav > a > button {
 }
 
 main {
-  grid-area: body;
+  width: 100%;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+}
+
+.section-grid-container {
+  display: grid;
+  grid-template-columns: [left] 15% [middle-left] 20% [middle] auto [middle-right] 20% [right] 15%;
+  grid-template-rows: [heading] 15% [content] auto [bottom] auto;
+  grid-template-areas: "heading heading . . ." ". content content content ." ". aside aside aside .";
+  /* grid-column-gap: 4ch; */
+}
+.section-grid-container h2 {
+  grid-area: heading;
+  font-size: 3em;
+  font-family: "Special Elite", cursive;
+  font-size: 3em;
+  margin-top: 0;
+  background-color: #acffc4;
+  text-align: right;
+  padding: auto;
+  align-self: end;
+}
+.section-grid-container div {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.section-grid-container aside {
+  grid-area: aside;
+  margin-top: 2ch;
+}
+
+#skillboxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#skillboxes div {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 1ch;
+  margin-left: 2ch;
+  margin-right: 2ch;
+  background-color: #adbfff;
 }
 
 .highlight {
   font-weight: bold;
 }
 
-.project {
+.project-container {
   border: 2px solid black;
   border-radius: 30px;
   padding: 2vh;
   margin-top: 3vh;
   background-color: #adbfff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: [info] auto [gap] 3% [image] 40%;
+  grid-template-rows: [title] auto [content] auto [links] auto;
+  grid-template-areas: "title . image" "info . image" "links . image";
 }
-.project img {
-  object-fit: cover;
-  max-width: 300px;
-}
-
-.header {
-  font-family: "Special Elite", cursive;
-  font-size: 3em;
-  margin-top: 0;
-}
-
-.section-marker {
-  grid-area: headline;
-  background-color: #acffc4;
-  text-align: right;
-  width: 800px;
-  height: 3.6em;
-  position: relative;
-  top: -100px;
-  left: -50%;
-}
-
-h2 {
-  padding-top: 1.3em;
-  font-size: 3em;
-}
-
-h3 {
+.project-container h3 {
   font-size: 1.7em;
   margin: 0;
+  grid-area: title;
 }
-
-h4 {
-  font-size: 1.2em;
+.project-container p {
+  grid-area: info;
 }
-
-section {
-  margin-bottom: 10%;
+.project-container div {
+  grid-area: links;
+}
+.project-container img {
+  object-fit: cover;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: 0px;
+  grid-area: image;
 }
 
 #introduction {
@@ -109,27 +129,14 @@ section {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  margin-bottom: 2em;
 }
 #introduction p {
   font-size: 4em;
   font-family: "Special Elite", cursive;
   line-height: 1.4em;
-}
-
-.skillboxes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-}
-
-.skillbox {
-  border: 1px solid black;
-  border-radius: 30px;
-  padding: 1ch;
-  margin-left: 2ch;
-  margin-right: 2ch;
-  background-color: #adbfff;
 }
 
 /* This is only for the doodle in the introduction */
