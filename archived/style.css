@@ -1,0 +1,273 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("image/bryan-colosky-317764-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #cfcfcf;
+  font-size: 16px;
+  font-family: "Montaga", serif;
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Cabin", sans-serif;
+  height: 100%;
+}
+
+a {
+  font-weight: bold;
+}
+
+a:link {
+  color: #0f483e;
+}
+
+a:visited {
+  color: #0b312a;
+}
+
+a:active {
+  color: #9668b0;
+}
+
+a:hover {
+  color: #9668b0;
+}
+
+p:last-child {
+  margin-bottom: 0px;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Amaranth", sans-serif;
+}
+
+h2 {
+  font-family: "Acme", sans-serif;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: "Amaranth", sans-serif;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+#credits {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+}
+
+#main-window {
+  min-height: 100%;
+  background-color: #cfcfcf;
+  border-left: 5px solid #323232;
+  border-right: 5px solid #323232;
+}
+
+#about-me {
+  padding-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#about-me-points {
+  display: flex;
+  flex-direction: column;
+}
+#about-me-points div {
+  overflow: hidden;
+}
+#about-me-points div:last-child {
+  margin-bottom: 0px;
+}
+#about-me-points .section {
+  border: 3px solid #323232;
+  border-radius: 10px;
+  background-color: #0d8376;
+  padding: 0 0 0 0;
+  box-shadow: 7px 7px 7px #777777;
+}
+@media (max-width: 769px) {
+  #about-me-points .section .section-description {
+    margin-top: 15px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 770px) {
+  #about-me-points .section .section-description {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.colored-text-content-box {
+  border: 3px solid #323232;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 5px;
+  background-color: #0d8376;
+  box-shadow: 7px 7px 7px #777777;
+}
+
+#projects {
+  padding-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#project-box {
+  display: flex;
+  flex-direction: column;
+}
+#project-box div {
+  overflow: hidden;
+}
+#project-box div:last-child {
+  margin-bottom: 0px;
+}
+#project-box .project {
+  border: 3px solid #323232;
+  border-radius: 10px;
+  background-color: #0d8376;
+  padding: 0 0 0 0;
+  box-shadow: 7px 7px 7px #777777;
+}
+@media (max-width: 769px) {
+  #project-box .project .project-example-img {
+    width: 100%;
+    display: block;
+  }
+  #project-box .project .project-description {
+    margin-top: 15px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 770px) {
+  #project-box .project .project-example-img {
+    width: 300px;
+    height: 300px;
+    float: left;
+    text-align: left;
+    margin-right: 15px;
+  }
+  #project-box .project .project-description {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+  }
+}
+#project-box .project .project-tags {
+  display: block;
+  padding: 3px;
+}
+
+.project-link {
+  font-family: "Acme", sans-serif;
+  font-size: 3em;
+}
+
+.project-tag {
+  display: inline-block;
+  font-size: 1em;
+  background-color: #9668b0;
+  border-radius: 10px;
+  border: 1.5px solid #323232;
+  padding: 0px;
+}
+.project-tag img {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  object-fit: contain;
+  overflow: hidden;
+  border-radius: 0px;
+  vertical-align: middle;
+}
+.project-tag .project-tag-language {
+  display: initial;
+  padding: 2px;
+  vertical-align: middle;
+  font-size: 0.9em;
+  font-family: "Acme", sans-serif;
+}
+
+.project-header {
+  font-weight: bold;
+  display: block;
+  font-family: "Acme", sans-serif;
+  font-size: 2em;
+}
+
+.btn {
+  border-radius: 10px;
+}
+
+#welcometext {
+  background-color: white;
+}
+
+#navigation-div {
+  padding-top: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.6em;
+  font-family: "Acme", sans-serif;
+}
+#navigation div {
+  min-width: 15%;
+  text-align: center;
+  border: 3px solid #323232;
+  border-radius: 10px;
+  background-color: #0d8376;
+}
+
+.space {
+  width: 1px;
+}
+
+.row {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
