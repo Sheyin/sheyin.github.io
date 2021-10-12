@@ -8,6 +8,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Special+Elite&display=swap" rel="stylesheet">
 		<meta name="robots" content="noindex" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="My portfolio site.">
 	</head>
 	
 	<body>
@@ -136,11 +138,11 @@
 				<div id="contact-box">
 					<form action="https://formspree.io/f/mjvjzdgk" method="POST">
 						<label for="name">Your name: </label>
-							<input type="text" name="name" required />
+							<input type="text" name="name" id="name" required />
 						<label for="email" required>Your e-mail: </label>
-							<input type="email" name="contactemail" />
+							<input type="email" name="email" id="email" />
 						<label for="message" id="message-box">Message: </label>
-							<textarea name="message"></textarea>
+							<textarea name="message" id="message"></textarea>
 						<input type="submit" value="Send" />
 					</form>
 				</div>
