@@ -1,83 +1,168 @@
-<html>
+<!DOCTYPE html>
+
+<html lang=en>
 	<head>
-		<title>My site</title>
-		<link rel="stylesheet" href="index.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+		<title>Site</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Special+Elite&display=swap" rel="stylesheet">
+		<meta name="robots" content="noindex" />
 	</head>
-	<body onload="page_loaded()">
-		<div class="entire-display">
-			<div class="computer-monitor">
-				<div class="computer-screen">
-					<!-- The text can go over the iframe... I think -->
-					<iframe id="computer-screen-frame"
-						width="100%"
-						height="100%"
-						name="screen"
-						sandbox="allow-top-navigation allow-same-origin allow-scripts allow-popups"
-						src="about:blank">
-					</iframe>
-					<div class="computer-text" id="computer-text">
-						<noscript>This site might not work correctly without Javascript.  If you'd like, you can visit the original/vanilla site <a href="https://sheyin.github.io/projects.html" target="_top">here</a>.</noscript>
-					</div>
-					<div class="mascot" id="mascot">
-						<div class="mascot-body">
-							{}
-							<div class="mascot-eye mascot-eye-left">
-								<div class="mascot-pupil"></div>
-							</div>
-							<div class="mascot-eye mascot-eye-right">
-								<div class="mascot-pupil"></div>
-							</div>
-							<div class="mascot-mouth"></div>
-						</div>
-						<div class="mascot-speech-bubble">
-							<div class="mascot-close" onClick="close_mascot()"><span class="mascot-close-text">X</span></div>
-							<div class="mascot-speech-bubble-text" id="speech-bubble"></div>
-							<div class="mascot-speech-bubble-line"></div>
-						</div>
-					</div>
-				</div>
+	
+	<body>
+		<header class="header"></header>
+		<!--
+		<nav>
+			<a href="#introduction"><button class="nav-item" type="button">Introduction</button></a>
+			<a href="#skills"><button class="nav-item" type="button">Skills</button></a>
+			<a href="#projects"><button class="nav-item" type="button">Projects</button></a>
+		</nav> -->
 
-				<div class="post-it-notes">
-					<a href="https://sheyin.github.io/projects.html" target="screen" onClick="project_note()">
-						<div class="post-it-note projects-link">
-							<div id="projects">Projects</div>
-						</div>
-					</a>
-					<a href="https://github.com/Sheyin/" target="_new" onClick="github_note()">
-						<div class="post-it-note github-link">
-							<div id="github">Github</div>
-						</div>
-					</a>
-					<a href="#" onClick="secret_note()">
-						<div class="post-it-note top-secret-link">
-							<div id="top-secret">Password: <br /> abc123</div>
-						</div>
-					</a>
+		<aside id="introduction">
+			<p>
+				Hi, my name is <span class="highlight">Cheryl</span>. 
+				<br />I am a <span class="highlight">web developer</span>.
+			</p>
+
+			<div id="doodle" class="doodle">
+				<div id="doodle-head" class="doodle"></div>
+				<div id="doodle-body" class="doodle"></div>
+				<div id="doodle-arms" class="doodle">
+					<div id="doodle-left-arm" class="doodle"></div>
+					<div id="doodle-right-arm" class="doodle"></div>
 				</div>
-				<div class="computer-stand">
-					<div class="computer-stand-neck"></div>
-					<div class="computer-stand-base"></div>
+				<div id="doodle-legs" class="doodle">
+					<div id="doodle-left-leg" class="doodle"></div>
+					<div id="doodle-right-leg" class="doodle"></div>
 				</div>
 			</div>
+		</aside>
 
+		<main>
+			
+			<section id="skills" class="section-grid-container">
+				<h2>Skills</h2>
 
-			<div class="rubber-ducky">
-				<div class="rubber-ducky-head" onClick="duck_clicked()">
-					<div class="rubber-ducky-beak" onClick="duck_clicked()"></div>
-					<div class="rubber-ducky-eye" onClick="duck_clicked()">
-						<div class="rubber-ducky-pupil" onClick="duck_clicked()"></div>
+				<div id="skillboxes">
+					<div>
+						<p>The languages with which I am most proficient are:
+							<ul>
+								<li>Javascript</li>
+								<li>Python</li>
+								<li>HTML</li>
+								<li>CSS</li>
+							</ul>
+						</p>
+					</div>
+		
+					<div>
+						<p>Some other languages I have dabbled in include:
+						<ul>
+							<li>C</li>
+							<li>C++</li>
+							<li>Java</li>
+							<li>C#</li>
+							<li>Swift</li>
+						</ul></p>
+					</div>
+		
+					<div>
+						<p>Some tools and frameworks I have used include:
+						<ul>
+							<li>React (Javascript)</li>
+							<li>Flask (Python)</li>
+							<li>SASS</li>
+							<li>SQL</li>
+							<li>Bootstrap</li>
+						</ul></p>
 					</div>
 				</div>
-				<div class="rubber-ducky-body" onClick="duck_clicked()">
-					<div class="rubber-ducky-wing" onClick="duck_clicked()"></div>
-				</div>
-			</div>
+	
+	
+				<aside>I have worked in different environments, with my preferred operating system being
+					<span class="highlight">Windows</span>, and my preferred IDE being 
+					<span class="highlight">Visual Studio Code</span>.
+				</aside>
+			</section>
+			
+			<section id="projects" class="section-grid-container">
+				<h2>Projects</h2>
 
-		</div>
+				<div>
+					<article class="project-container">
+						<h3>Word Unscrambler</h3>
+						<p>A web app that takes a word jumble and attempts to figure out what word the letters form.  It categorizes the results based on likelihood
+							of a successful word, with confirmed results being matched against a dictionary of words.  The backend uses Python and mySQL (database) and
+							pages are served using Flask templates.  Additional input validation is performed with Javascript and it is styled using Bootstrap.
+						</p>
+						<div>
+							<a href="http://sheyin.pythonanywhere.com">Live Site</a>
+							<a href="https://github.com/Sheyin/word-unscrambler">Repository (Github)</a>
+						</div>
+						<img src="image/wordunscrambler.jpg" alt="Word Unscrambler">
+					</article>
+	
+					<article class="project-container">
+						<h3>Book Review Site</h3>
+						<p>
+							A mock book review site that allows users to search for books by title/author/ISBN.  It allows authenticated users to rate and review books,
+							with ratings fetched using Goodread's api.  The site itself also provides api access via json.  
+							The backend uses Flask (Python) and the book information uses PostgreSQL, with the entire site being hosted on Heroku.  Project was created for Harvard's CS50W course.
+						</p>
+						<div>
+							<a href="http://projectheron.herokuapp.com">Live Site</a>
+						</div>
+						<img src="image/bookreview.jpg" alt="Book Review Site">
+					</article>
+	
+					<article>
+					</article>
+				</div>
+				
+
+			</section>
+
+			<section id="funstuff" class="section-grid-container">
+				<h2>Fun Stuff</h2>
+
+				<div>
+					<article class="project-container">
+						<h3>CSS Art - "Haro"</h3>
+						<p>I was looking for practice ideas when I stumbled upon the idea of "CSS Art".
+							It was very satisfying to try to make things with just HTML and CSS, so I occasionally try to make something as a personal challenge.
+							This is a character from the Mobile Suit Gundam series to practice animations with CSS.
+						</p>
+						<div>
+							<a href="https://codepen.io/Sheyin/pen/vYZepLp" target="_new">Demonstration and Source (Codepen)</a>
+						</div>
+						<img src="image/haro.jpg" alt="CSS art - Haro from Mobile Suit Gundam">
+					</article>
+				</div>
+
+			</section>
+
+			<section id="contact" class="section-grid-container">
+				<h2>Contact Me</h2>
+
+				<div id="contact-box">
+					
+					<form action="https://formspree.io/f/mjvjzdgk" method="POST">
+						<label for="name">Your name: </label>
+							<input type="text" name="name" required />
+						<label for="email" required>Your e-mail: </label>
+							<input type="email" name="contactemail" />
+						<label for="message" id="message-box">Message: </label>
+							<textarea name="message"></textarea>
+						<input type="submit" value="Send" />
+					</form>
+				</div>
+
+				</form>
+
+			</section>
+		</main>
+
 	</body>
 
-	<audio id="audio_quack" src="audio/quack.wav" preload="auto"></audio>
-	<script src="new_script.js"></script>
 </html>
