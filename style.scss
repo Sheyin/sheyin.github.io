@@ -216,11 +216,11 @@ main {
 		border: 0px;
 		border-radius: 8px;
 		grid-column-end: span 4;
-		height: 3ch;
+		height: 3vh;
 	}
 
 	textarea {
-		height: 30ch;
+		height: 30vh;
 		grid-column-end: span 4;
 		border: 0px;
 		border-radius: 8px;
@@ -233,7 +233,7 @@ main {
 		border: 0px;
 		border-radius: 8px;
 		background-color: $blue;
-		height: 3ch;
+		height: 3vh;
 	}
 }
 
@@ -301,13 +301,11 @@ html {
 		input {
 			border: 0px;
 			border-radius: 8px;
-			height: 3ch;
 			grid-column-start: 2;
 			grid-column-end: span 2;
 		}
 
 		textarea {
-			height: 30ch;
 			grid-column-start: 2;
 			grid-column-end: span 2;
 		}
