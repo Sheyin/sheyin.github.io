@@ -188,10 +188,11 @@ main {
   border: 0px;
   border-radius: 8px;
   grid-column-end: span 4;
-  height: 3vh;
+  height: 3ch;
+  box-sizing: border-box;
 }
 #contact-box textarea {
-  height: 30vh;
+  height: 30ch;
   grid-column-end: span 4;
   border: 0px;
   border-radius: 8px;
@@ -203,7 +204,7 @@ main {
   border: 0px;
   border-radius: 8px;
   background-color: #007bff;
-  height: 3vh;
+  height: 3ch;
 }
 
 html {
