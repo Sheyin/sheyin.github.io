@@ -158,7 +158,7 @@ main {
 
 	img {
 		object-fit: cover;
-		max-width: 300px;
+		max-width: 100%;
 		margin: auto;
 		grid-area: image;
 	}
@@ -283,6 +283,7 @@ html {
 			font-size: 1.7em;
 		}
 		img {
+			max-width: 300px;
 			margin-left: auto;
 			margin-right: 0px;
 		}
