@@ -50,7 +50,7 @@ main {
 
 .section-grid-container {
   display: grid;
-  grid-template-columns: [left] 15% [middle-left] 15% [middle] 15% [middle-right] auto [right] 15%;
+  grid-template-columns: [left] 1fr [middle-left] 1fr [middle] 1fr [middle-right] 1fr [right] 1fr;
   grid-template-rows: [heading] auto [content] auto [bottom] auto;
   grid-template-areas: "heading heading heading . ." ". content content content ." ". aside aside aside .";
 }
@@ -90,8 +90,6 @@ main {
 #skillboxes div {
   border-radius: 30px;
   padding: 1ch;
-  margin-left: 2ch;
-  margin-right: 2ch;
   background-color: #e5ebff;
   box-shadow: 10px 5px 5px grey;
 }
