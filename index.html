@@ -12,15 +12,15 @@
 	
 	<body>
 		<header class="header"></header>
-		
+		<!--
 		<nav>
 			<a href="#introduction"><button class="nav-item" type="button">Introduction</button></a>
 			<a href="#skills"><button class="nav-item" type="button">Skills</button></a>
 			<a href="#projects"><button class="nav-item" type="button">Projects</button></a>
-		</nav>
+		</nav> -->
 
 		<aside id="introduction">
-			<p class="introduction-text">
+			<p>
 				Hi, my name is <span class="highlight">Cheryl</span>. 
 				<br />I am a <span class="highlight">web developer</span>.
 			</p>
@@ -73,6 +73,7 @@
 							<li>React (Javascript)</li>
 							<li>Flask (Python)</li>
 							<li>SASS</li>
+							<li>SQL</li>
 							<li>Bootstrap</li>
 						</ul></p>
 					</div>
@@ -86,9 +87,9 @@
 			</section>
 			
 			<section id="projects" class="section-grid-container">
-				<h2 class="section-grid-header">Projects</h2>
+				<h2>Projects</h2>
 
-				<div class="section-grid-content">
+				<div>
 					<article class="project-container">
 						<h3>Word Unscrambler</h3>
 						<p>A web app that takes a word jumble and attempts to figure out what word the letters form.  It categorizes the results based on likelihood
@@ -119,6 +120,45 @@
 					</article>
 				</div>
 				
+
+			</section>
+
+			<section id="funstuff" class="section-grid-container">
+				<h2>Fun Stuff</h2>
+
+				<div>
+					<article class="project-container">
+						<h3>CSS Art - "Haro"</h3>
+						<p>I was looking for practice ideas when I stumbled upon the idea of "CSS Art".
+							It was very satisfying to try to make things with just HTML and CSS, so I occasionally try to make something as a personal challenge.
+							This is a character from the Mobile Suit Gundam series to practice animations with CSS.
+						</p>
+						<div>
+							<a href="https://codepen.io/Sheyin/pen/vYZepLp" target="_new">Demonstration and Source (Codepen)</a>
+						</div>
+						<img src="image/haro.jpg" alt="CSS art - Haro from Mobile Suit Gundam">
+					</article>
+				</div>
+
+			</section>
+
+			<section id="contact" class="section-grid-container">
+				<h2>Contact Me</h2>
+
+				<div id="contact-box">
+					
+					<form action="https://formspree.io/f/mjvjzdgk" method="POST">
+						<label for="name">Your name: </label>
+							<input type="text" name="name" required />
+						<label for="email" required>Your e-mail: </label>
+							<input type="email" name="contactemail" />
+						<label for="message" id="message-box">Message: </label>
+							<textarea name="message"></textarea>
+						<input type="submit" value="Send" />
+					</form>
+				</div>
+
+				</form>
 
 			</section>
 		</main>
