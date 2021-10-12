@@ -53,13 +53,11 @@ main {
   grid-template-columns: [left] 15% [middle-left] 20% [middle] auto [middle-right] 20% [right] 15%;
   grid-template-rows: [heading] auto [content] auto [bottom] auto;
   grid-template-areas: "heading heading . . ." ". content content content ." ". aside aside aside .";
-  /* grid-column-gap: 4ch; */
 }
 .section-grid-container h2 {
   grid-area: heading;
-  font-size: 3em;
   font-family: "Special Elite", cursive;
-  font-size: 3em;
+  font-size: 2em;
   margin-top: 0;
   background-color: #ffffff;
   box-shadow: 10px 5px 5px grey;
@@ -85,8 +83,9 @@ main {
 
 #skillboxes {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  gap: 15px;
 }
 #skillboxes div {
   border-radius: 30px;
@@ -108,12 +107,14 @@ main {
   background-color: #e5ebff;
   box-shadow: 10px 5px 5px grey;
   display: grid;
-  grid-template-columns: [info] auto [gap] 3% [image] 40%;
-  grid-template-rows: [title] auto [content] auto [links] auto;
-  grid-template-areas: "title . image" "info . image" "links . image";
+  grid-template-columns: [info] auto;
+  grid-template-rows: [title] auto [content] auto [links] auto [image] auto;
+  grid-template-areas: "title" "info" "links" "image";
+  grid-gap: 10px;
+  column-gap: 4em;
 }
 .project-container h3 {
-  font-size: 1.7em;
+  font-size: 1.3em;
   margin: 0;
   grid-area: title;
 }
@@ -134,8 +135,7 @@ main {
 .project-container img {
   object-fit: cover;
   max-width: 300px;
-  margin-left: auto;
-  margin-right: 0px;
+  margin: auto;
   grid-area: image;
 }
 
@@ -146,16 +146,16 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 4em;
-  padding-bottom: 4em;
-  margin-bottom: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
 }
 #introduction p {
-  font-size: 4em;
   font-family: "Special Elite", cursive;
-  line-height: 1.4em;
+  font-size: 2.5em;
+  line-height: 1em;
 }
 
 #contact-box {
@@ -171,103 +171,99 @@ main {
   grid-template-columns: [label] 1fr [box] 1fr [gap1] 1fr [gap2] 1fr;
   grid-template-rows: [name] auto [email] auto [comments] auto;
   grid-auto-flow: row;
-  /* grid-template-areas: "label text ."; */
-  /* max-width: 50%; */
   row-gap: 0.5em;
   justify-content: space-evenly;
   align-items: center;
 }
 #contact-box label {
-  grid-column-start: 1;
-  align-self: start;
+  grid-column-start: 2;
+  grid-column-end: span 2;
+  align-self: center;
+  margin: auto;
 }
 #contact-box input {
   border: 0px;
   border-radius: 8px;
-  height: 3ch;
+  grid-column-end: span 4;
 }
 #contact-box textarea {
-  height: 20ch;
-  grid-column-end: span 2;
+  height: 30ch;
+  grid-column-end: span 4;
   border: 0px;
   border-radius: 8px;
   resize: vertical;
 }
 #contact-box input[type=submit] {
-  grid-column-start: 2;
-  grid-column-end: span 2;
+  grid-column-start: 1;
+  grid-column-end: span 4;
   border: 0px;
   border-radius: 8px;
   background-color: #007bff;
   height: 3ch;
 }
 
-/* This is only for the doodle in the introduction */
 html {
   width: 100%;
   height: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
   #introduction {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    margin-bottom: 3em;
   }
   #introduction p {
-    font-size: 2.5em;
-    line-height: 1em;
+    font-size: 4em;
+    line-height: 1.4em;
   }
 
   .section-grid-container h2 {
-    font-size: 2em;
+    font-size: 3em;
   }
 
   #skillboxes {
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 15px;
+    flex-direction: row;
   }
 
   .project-container {
-    display: grid;
-    grid-template-columns: [info] auto;
-    grid-template-rows: [title] auto [content] auto [links] auto [image] auto;
-    grid-template-areas: "title" "info" "links" "image";
-    grid-gap: 10px;
+    grid-template-columns: [info] 2fr [image] auto;
+    grid-template-rows: [title] auto [content] auto [links] auto;
+    grid-template-areas: "title  image" "info  image" "links  image";
+    column-gap: 4em;
   }
   .project-container h3 {
-    font-size: 1.3em;
+    font-size: 1.7em;
   }
   .project-container img {
-    margin: auto;
+    margin-left: auto;
+    margin-right: 0px;
   }
 
+  #contact-box form {
+    align-items: baseline;
+  }
   #contact-box label {
-    grid-column-start: 2;
-    grid-column-end: span 2;
-    align-self: center;
-    margin: auto;
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    align-self: start;
+    justify-self: start;
   }
   #contact-box input {
     border: 0px;
     border-radius: 8px;
-    grid-column-end: span 4;
+    height: 3ch;
+    grid-column-start: 2;
+    grid-column-end: span 2;
   }
   #contact-box textarea {
     height: 30ch;
-    grid-column-end: span 4;
-    border: 0px;
-    border-radius: 8px;
-    resize: vertical;
+    grid-column-start: 2;
+    grid-column-end: span 2;
   }
   #contact-box input[type=submit] {
-    grid-column-start: 1;
-    grid-column-end: span 4;
-    border: 0px;
-    border-radius: 8px;
-    background-color: #007bff;
-    height: 3ch;
+    grid-column-start: 2;
+    grid-column-end: span 2;
   }
 }
 
