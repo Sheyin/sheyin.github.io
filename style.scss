@@ -61,10 +61,10 @@ main {
 
 .section-grid-container {
 	display: grid;
-	grid-template-columns: [left] 15% [middle-left] 20% [middle] auto [middle-right] 20% [right] 15%;
+	grid-template-columns: [left] 15% [middle-left] 15% [middle] 15% [middle-right] auto [right] 15%;
 	grid-template-rows: [heading] auto [content] auto [bottom] auto;
 	grid-template-areas:
-		"heading heading . . ."
+		"heading heading heading . ."
 		". content content content ."
 		". aside aside aside .";
 	h2 {
@@ -81,7 +81,7 @@ main {
 		margin-bottom: 0.5em;
 		padding-top: 10px;
 		padding-bottom: 5px;
-		padding-right: 1em;
+		padding-right: 0.2em;
 	}
 
 	div {
@@ -135,7 +135,7 @@ main {
 	column-gap: 4em;
 
 	h3 {
-		font-size: 1.3em;
+		font-size: 1.2em;
 		margin: 0;
 		grid-area: title;
 	}
@@ -173,6 +173,7 @@ main {
 	align-items: center;
 	padding-top: 1em;
 	padding-bottom: 1em;
+	padding-left: 1.5em;
 	margin-bottom: 1em;
 	border-top: 3px solid black;
 	border-bottom: 3px solid black;
@@ -180,7 +181,9 @@ main {
 	p {
 		font-family: $typewriter;
 		font-size: 2.5em;
-		line-height: 1em;
+		line-height: 1.2em;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -213,6 +216,7 @@ main {
 		border: 0px;
 		border-radius: 8px;
 		grid-column-end: span 4;
+		height: 3ch;
 	}
 
 	textarea {
@@ -242,6 +246,7 @@ html {
 	#introduction {
 		padding-top: 4em;
 		padding-bottom: 4em;
+		padding-left: 0;
 		margin-bottom: 3em;
 		p {
 			font-size: 4em;
@@ -250,8 +255,14 @@ html {
 	}
 
 	.section-grid-container {
+		grid-template-columns: [left] 15% [middle-left] 20% [middle] auto [middle-right] 20% [right] 15%;
+		grid-template-areas:
+			"heading heading . . ."
+			". content content content ."
+			". aside aside aside .";
 		h2 {
 			font-size: 3em;
+			padding-right: 1em;
 		}
 	}
 
