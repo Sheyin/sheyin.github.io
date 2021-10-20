@@ -1,0 +1,22 @@
+body {
+	background-color: #d6d8d6;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+header > h2 {
+	text-align: center;
+}
+
+main > div {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main > div > div {
+	margin-bottom: 20px;
+}
