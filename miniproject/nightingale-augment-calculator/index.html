@@ -1,0 +1,92 @@
+<head>
+    <title>Nightingale Augments Chooser</title>
+    <link rel="stylesheet" href="nightingale-style.css">
+</head>
+
+
+<body>
+    <div id="introduction">
+        <header>
+            Nightingale Augments Chooser
+        </header>
+
+        <br />
+
+        Not sure which augments to use?  Pick what item you're planning to craft below, and you can
+        see which stats are available / which augment (furniture) provides them.
+        Nightingale is still in early access so this may become out of date quickly.  This should be
+        roughly up to date with the Realms Rebuilt Update (9/24).
+        
+    </div>
+
+    <main>
+        <div class="selection-window">
+            <div class="heading">What would you like to make?</div>
+    
+            <div class="selection-box">
+                <div class="column">
+                    <div class="craftable-heading">Weapons/Tools:</div>
+                    <div class="craftable" id="axe">Axe</div>
+                    <div class="craftable" id="axepick">Axepick</div>
+                    <div class="craftable" id="bow">Bow</div>
+                    <div class="craftable" id="climbingPicks">Climbing Picks</div>
+                    <div class="craftable" id="fishingRod">Fishing Rod</div>
+                    <div class="craftable" id="hammer">Hammer</div>
+                    <div class="craftable" id="knife">Knife</div>
+                    <div class="craftable" id="maul">Maul</div>
+                    <div class="craftable" id="pickaxe">Pickaxe</div>
+                    <div class="craftable" id="revolver">Revolver</div>
+                    <div class="craftable" id="rifle">Rifle</div>
+                    <div class="craftable" id="satchel">Satchel of Grenades</div>
+                    <div class="craftable" id="shotgun">Shotgun</div>
+                    <div class="craftable" id="sickle">Sickle</div>
+                    <div class="craftable" id="slingbow">Slingbow</div>
+                    <div class="craftable" id="umbrella">Umbrella</div>
+                </div>
+                <div class="column">
+                    <div class="craftable-heading">Items:</div>
+                    <div class="craftable" id="clothing">Clothing</div>
+                    <div class="craftable" id="ammunition">Ammunition</div>
+                    <div class="craftable" id="wood">Wood / Lumber</div>
+                    <div class="craftable" id="cloth">Cloth/Thread</div>
+                    <div class="craftable" id="leather">Leather/Straps</div>
+                    <div class="craftable" id="metal">Metal / Ingots</div>
+                    <div class="craftable" id="paper">Paper</div>
+                    <div class="craftable" id="ink">Ink</div>
+                    <div class="craftable" id="fishDish">Fish Dish</div>
+                    <div class="craftable" id="food">Food / Dishes</div>
+                    <div class="craftable" id="spice">Spices / Seeds</div>
+                    <div class="craftable" id="charm">Enchantments / Charms</div>
+                    <div class="craftable" id="potion">Potions</div>
+                    <div class="craftable" id="stone">Stone / Bricks </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="result-window initial-hidden">
+            <div class="results">
+                <div class="heading">Stats to choose from: </div>
+                <!-- At this point, filter to what shoud be legal for the craftable/s -->
+                <div id="stat-choices">
+                    Stat choices: None to display (yet).
+                </div>
+            </div>
+
+            <div class="results">
+                <div class="heading">Time Reductions: </div>
+                <div id="time-reductions">Time reductions: No time reductions to display.</div>
+            </div>
+        </div>
+    
+    </main>
+
+    <footer>
+        This site is a fan-made work.  
+        <a href="https://playnightingale.com/">Nightingale</a> is the property of Inflexion Games.
+    </footer>
+    
+    
+    <script type="module" src="nightingale-script.js"></script> 
+
+</body>
